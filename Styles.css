@@ -4,14 +4,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #2f2f2f;
 }
 
 .progress-container {
     width: 70%;
-    height: 30px;
+    height: 100px;
     border: 2px solid orange;
-    background-color: #eaeaea;
+    background-color: #505050;
     overflow: hidden;
     position: relative;
 }
@@ -19,7 +19,8 @@ body {
 .progress-bar {
     width: 30%;
     height: 100%;
-    background-color: orange;
+    background-color: rgb(31, 31, 31);
+    border-radius: 2px;
     position: absolute;
     animation: slide 2s linear infinite;
 }
