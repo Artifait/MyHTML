@@ -1,86 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, my site!</title>
-    <style>
-        /* Основные стили для центрирования */
-        body, html {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #171717;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Стиль заголовка */
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #f0f0f0;
-        }
-
-        /* Контейнер для иконок */
-        .icon-container {
-            display: flex;
-            gap: 20px;
-        }
-
-        /* Стиль для иконок */
-        .icon {
-            width: 50px;
-            height: 50px;
-            opacity: 0;
-            transform: translateY(100px);
-            transition: transform 2s ease, opacity 2s ease;
-        }
-
-        .icon:nth-child(1) {
-            animation: slide-in 2s ease forwards;
-            animation-delay: 0.5s;
-        }
-        .icon:nth-child(2) {
-            animation: slide-in 2s ease forwards;
-            animation-delay: 1s;
-        }
-        .icon:nth-child(3) {
-            animation: slide-in 2s ease forwards;
-            animation-delay: 1.5s;
-        }
-        .icon:nth-child(4) {
-            animation: slide-in 2s ease forwards;
-            animation-delay: 2s;
-        }
-        .icon:nth-child(5) {
-            animation: slide-in 2s ease forwards;
-            animation-delay: 2.5s;
-        }
-
-        @keyframes slide-in {
-            from {
-                opacity: 0;
-                transform: translateX(100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Часы</title>
+  <link href="Styles.css"  rel="stylesheet">
 </head>
 <body>
-    <h1>Hello, my site!</h1>
-
-    <div class="icon-container">
-        <img src="src/pencil.png" alt="Pencil Icon" class="icon">
-        <img src="src/book.png" alt="Book Icon" class="icon">
-        <img src="src/calc.png" alt="Calculator Icon" class="icon">
-        <img src="src/paper.png" alt="Paper Icon" class="icon">
-        <img src="src/pallete.png" alt="Palette Icon" class="icon">
-    </div>
+  <div class="clock">
+    <div class="hand hour" id="hour"></div>
+    <div class="hand minute" id="minute"></div>
+    <div class="hand second" id="second"></div>
+    <div class="center-point"></div>
+  </div>
+  <script src="Scripts.js">
+  </script>
 </body>
 </html>
