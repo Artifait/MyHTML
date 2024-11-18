@@ -1,96 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dark Themed Table Layout</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #121212;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 20px 0;
-      color: #00ffcc;
-    }
-
-    table {
-      width: 90%;
-      margin: 20px auto;
-      border-collapse: collapse;
-      background-color: #1e1e1e;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    thead {
-      background-color: #333333;
-    }
-
-    th, td {
-      padding: 12px 20px;
-      text-align: left;
-      border: 1px solid #444444;
-    }
-
-    th {
-      color: #00ffcc;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    tr:hover {
-      background-color: #292929;
-    }
-
-    td {
-      color: #dddddd;
-    }
-
-    @media (max-width: 768px) {
-      table {
-        font-size: 14px;
-      }
-
-      th, td {
-        padding: 8px;
-      }
-    }
-  </style>
+  <title>Времена глаголов</title>
+  <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-  <h1>Dark Mode Table Example</h1>
+  <h1>Времена английского глагола</h1>
   <table>
     <thead>
       <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Status</th>
+        <th rowspan="2">Характеристика</th>
+        <th colspan="3">Simple</th>
+        <th colspan="3">Progressive</th>
+        <th colspan="3">Perfect</th>
+        <th colspan="3">Perfect Progressive</th>
+      </tr>
+      <tr>
+        <th>Present</th>
+        <th>Past</th>
+        <th>Future</th>
+        <th>Present</th>
+        <th>Past</th>
+        <th>Future</th>
+        <th>Present</th>
+        <th>Past</th>
+        <th>Future</th>
+        <th>Present</th>
+        <th>Past</th>
+        <th>Future</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td>John Doe</td>
-        <td>john.doe@example.com</td>
-        <td>Active</td>
+        <td>Описание</td>
+        <td>V/Vs</td>
+        <td>Ved/V2</td>
+        <td>Will + V</td>
+        <td>Am/Is/Are + Ving</td>
+        <td>Was/Were + Ving</td>
+        <td>Will + be + Ving</td>
+        <td>Have/Has + Ved/V3</td>
+        <td>Had + Ved/V3</td>
+        <td>Will + have + Ved/V3</td>
+        <td>Have/Has + been + Ving</td>
+        <td>Had + been + Ving</td>
+        <td>Will + have + been + Ving</td>
       </tr>
       <tr>
-        <td>2</td>
-        <td>Jane Smith</td>
-        <td>jane.smith@example.com</td>
-        <td>Inactive</td>
+        <td>Вопрос</td>
+        <td>Do/Does + V</td>
+        <td>Did + V</td>
+        <td>Inversion</td>
+        <td>Inversion</td>
+        <td>Inversion</td>
+        <td>Inversion</td>
+        <td>Inversion</td>
+        <td>Inversion</td>
+        <td>Inversion</td>
+        <td>Inversion</td>
+        <td>Inversion</td>
+        <td>Inversion</td>
       </tr>
       <tr>
-        <td>3</td>
-        <td>Mike Johnson</td>
-        <td>mike.j@example.com</td>
-        <td>Pending</td>
+        <td>Отрицание</td>
+        <td>Do/Does + not + V</td>
+        <td>Did + not + V</td>
+        <td>Won't + V</td>
+        <td>Am/Is/Are + not + Ving</td>
+        <td>Was/Were + not + Ving</td>
+        <td>Won't + be + Ving</td>
+        <td>Have/Has + not + Ved/V3</td>
+        <td>Had + not + Ved/V3</td>
+        <td>Won't + have + Ved/V3</td>
+        <td>Have/Has + not + been + Ving</td>
+        <td>Had + not + been + Ving</td>
+        <td>Won't + have + been + Ving</td>
       </tr>
     </tbody>
   </table>
