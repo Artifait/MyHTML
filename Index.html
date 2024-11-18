@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Themed Table Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      color: #00ffcc;
+    }
+
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #1e1e1e;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    thead {
+      background-color: #333333;
+    }
+
+    th, td {
+      padding: 12px 20px;
+      text-align: left;
+      border: 1px solid #444444;
+    }
+
+    th {
+      color: #00ffcc;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    tr:hover {
+      background-color: #292929;
+    }
+
+    td {
+      color: #dddddd;
+    }
+
+    @media (max-width: 768px) {
+      table {
+        font-size: 14px;
+      }
+
+      th, td {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Dark Mode Table Example</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>john.doe@example.com</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td>jane.smith@example.com</td>
+        <td>Inactive</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Mike Johnson</td>
+        <td>mike.j@example.com</td>
+        <td>Pending</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
