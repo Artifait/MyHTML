@@ -28,3 +28,7 @@ git push --all origin
 ```
 git diff --cached --name-only
 ```
+## Синхрон с GitHub
+```
+git fetch --all
+```
