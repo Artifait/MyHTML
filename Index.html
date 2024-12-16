@@ -1,157 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Table</title>
-    <link href="Styles.css" rel="stylesheet">
+    <title>Изучение HTML и CSS</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2">ASPECT</th>
-                <th>SIMPLE</th>
-                <th>PROGRESSIVE</th>
-                <th>PERFECT</th>
-                <th>
-                    <div>PERFECT</div>
-                    <div>PROGRESSIVE</div>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="2" colspan="2" class="heading">MEANING</td>
-                <td>a common aspect</td>
-                <td>a process</td>
-                <td>priority</td>
-                <td>priority + process</td>
-            </tr>
-            <tr>
-                <td><strong>When?</strong></td>
-                <td><strong>At what time?</strong></td>
-                <td><strong>By what time?</strong></td>
-                <td>
-                    <div><strong>Since what time?</strong></div>
-                    <div><strong>How long?</strong></div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="heading">Period of time</td>
-                <td>
-                    <div>usually, often, always, seldom,</div>
-                    <div>every day (week, month, year)</div>
-                </td>
-                <td>now, at the moment</td>
-                <td>
-                    <div>ever, never, just, already,</div>
-                    <div>not..yet, by 3 p.m.</div>
-                </td>
-                <td>
-                    <div>since 3 p.m., for a long time,</div>
-                    <div>for a month</div>
-                </td>
-            </tr>
-            <tr>
-                <td rowspan="3" class="heading">Present</td>
-                <td class="action">+</td>
-                <td>V<sup>s</sup></td>
-                <td>am/is/are + V<sub>ing</sub></td>
-                <td>have/has + V<sup>ed</sup>/V<sub>3</sub></td>
-                <td>have/has + been + V<sub>ing</sub></td>
-            </tr>
-            <tr>
-                <td class="action">-</td>
-                <td>do/does + not + V</td>
-                <td>am/is/are + not + V<sub>ing</sub></td>
-                <td>have/has + not + V<sup>ed</sup>/V<sub>3</sub></td>
-                <td>have/has + not + been + V<sub>ing</sub></td>
-            </tr>
-            <tr>
-                <td class="action">?</td>
-                <td>do/does + V</td>
-                <td>am/is/are + V<sub>ing</sub>?</td>
-                <td>have/has + V<sup>ed</sup>/V<sub>3</sub>?</td>
-                <td>have/has + been + V<sub>ing</sub>?</td>
-            </tr>
-            <tr>
-                <td colspan="2"  class="heading">Period of time</td>
-                <td>
-                    <div>usually, often, always, seldom,</div>
-                    <div>every day (week, month, year)</div>
-                </td>
-                <td>now, at the moment</td>
-                <td>
-                    <div>ever, never, just, already,</div>
-                    <div>not..yet, by 3 p.m.</div>
-                </td>
-                <td>
-                    <div>since 3 p.m., for a long time,</div>
-                    <div>for a month</div>
-                </td>
-            </tr>
-            <tr>
-                <td rowspan="3" class="heading">Past</td>
-                <td class="action">+</td>
-                <td>V<sup>ed</sup>/V<sub>2</sub></td>
-                <td>was/were + V<sub>ing</sub></td>
-                <td>had + V<sup>ed</sup>/V<sub>3</sub></td>
-                <td>had + been + V<sub>ing</sub></td>
-            </tr>
-            <tr>
-                <td class="action">-</td>
-                <td>did + not + V</td>
-                <td>was/were + not + V<sub>ing</sub></td>
-                <td>had + not + V<sup>ed</sup>/V<sub>3</sub></td>
-                <td>had + not + been + V<sub>ing</sub></td>
-            </tr>
-            <tr>
-                <td class="action">?</td>
-                <td>did + V</td>
-                <td>was/were + V<sub>ing</sub>?</td>
-                <td>had + V<sup>ed</sup>/V<sub>3</sub>?</td>
-                <td>had + been + V<sub>ing</sub>?</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="heading">Period of time</td>
-                <td>
-                    <div>usually, often, always, seldom,</div>
-                    <div>every day (week, month, year)</div>
-                </td>
-                <td>now, at the moment</td>
-                <td>
-                    <div>ever, never, just, already,</div>
-                    <div>not..yet, by 3 p.m.</div>
-                </td>
-                <td>
-                    <div>since 3 p.m., for a long time,</div>
-                    <div>for a month</div>
-                </td>
-            </tr>
-            <tr>
-                <td rowspan="3" class="heading">Future</td>
-                <td class="action">+</td>
-                <td>will + V</td>
-                <td>will + be + V<sub>ing</sub></td>
-                <td>will + have + V<sup>ed</sup>/V<sub>3</sub></td>
-                <td>will + have + been + V<sub>ing</sub></td>
-            </tr>
-            <tr>
-                <td class="action">-</td>
-                <td>will + not + V</td>
-                <td>will + not + be + V<sub>ing</sub></td>
-                <td>will + not + have + V<sup>ed</sup>/V<sub>3</sub></td>
-                <td>will + not + have + been + V<sub>ing</sub></td>
-            </tr>
-            <tr>
-                <td class="action">?</td>
-                <td>will + V?</td>
-                <td>will + be + V<sub>ing</sub>?</td>
-                <td>will + have + V<sup>ed</sup>/V<sub>3</sub>?</td>
-                <td>will + have + been + V<sub>ing</sub>?</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <header>
+            <h1>Добро пожаловать в веб-разработку</h1>
+            <p>Изучайте HTML, CSS и адаптивный дизайн</p>
+        </header>
+        <main>
+            <aside>
+                <h2>О HTML</h2>
+                <p>HTML (язык гипертекстовой разметки) — это стандартный язык для создания веб-страниц. Он задаёт структуру контента и работает вместе с CSS для оформления.</p>
+                <ul>
+                    <li>Элементы задаются с помощью тегов.</li>
+                    <li>HTML легко изучить и широко использовать.</li>
+                    <li>Основные теги: <code>&lt;div&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code>.</li>
+                </ul>
+            </aside>
+            <section>
+                <h2>Создайте аккаунт</h2>
+                <form>
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username" placeholder="Введите имя пользователя" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите email" required>
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+                <p>Уже есть аккаунт? <a href="#">Войти</a>.</p>
+            </section>
+            <aside>
+                <h2>О CSS</h2>
+                <p>CSS (каскадные таблицы стилей) используется для оформления структуры, заданной HTML. С помощью CSS можно управлять макетом, цветами, шрифтами и адаптивностью сайта.</p>
+                <ul>
+                    <li>CSS делает сайты визуально привлекательными.</li>
+                    <li>Основные функции: селекторы, свойства и медиазапросы.</li>
+                    <li>Flexbox и Grid упрощают создание макетов.</li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2024 Платформа веб-разработки. Все права защищены.</p>
+        </footer>
+    </div>
 </body>
 </html>
