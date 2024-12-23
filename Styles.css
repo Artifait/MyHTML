@@ -1,111 +1,136 @@
-/* Стили для улучшения визуального оформления */
-body {
-    font-family: 'Arial', sans-serif;
+/* Общий фон */
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f7f8fc;
-    color: #333;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1200px;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: radial-gradient(circle, #0f2027, #203a43, #2c5364);
+    overflow: auto;
+  }
+  
+  /* Контейнер формы */
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     margin: auto;
-    min-height: 100vh;
-}
-
-header {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    color: #fff;
+    transform: translateY(20%);
+  }
+  
+  /* Заголовок */
+  h1 {
     text-align: center;
-    padding: 20px;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-main {
-    display: flex;
-    flex: 1;
-    gap: 20px;
-    padding: 20px;
-}
-
-aside {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-basis: 25%;
-}
-
-section {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-}
-
-aside h2, section h2 {
-    color: #6a11cb;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-form {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00d4ff;
+  }
+  
+  /* Элементы формы */
+  form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-form label {
-    font-weight: bold;
-}
-
-form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
-    background-color: #6a11cb;
-    color: #fff;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  input, textarea, button {
+    margin-bottom: 15px;
+    padding: 12px 15px;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input, textarea {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus, textarea:focus {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #00d4ff;
+    outline: none;
+  }
+  
+  /* Радио-кнопки и чекбоксы */
+  input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  /* Кнопка отправки */
+  button {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
     cursor: pointer;
+    transition: 0.3s ease-in-out, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Мобильная адаптивность */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input, textarea, button {
+      font-size: 0.9rem;
+      padding: 10px 12px;
+    }
+  }
+  
+  .btn {
+    background: #00d4ff;
+    color: #000;
     font-size: 16px;
-}
-
-form button:hover {
-    background-color: #2575fc;
-}
-
-a {
-    color: #2575fc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 960px) {
-    main {
-        flex-direction: column;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #00a3cc;
+  }
+  
+  /* Адаптивный дизайн */
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px 20px;
     }
-
-    aside {
-        flex-basis: auto;
+  
+    .container h1 {
+      font-size: 20px;
     }
-}
+  
+    .btn {
+      font-size: 14px;
+    }
+  }

@@ -1,56 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Изучение HTML и CSS</title>
-    <link rel="stylesheet" href="Styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css">
+  <title>Регистрация</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Добро пожаловать в веб-разработку</h1>
-            <p>Изучайте HTML, CSS и адаптивный дизайн</p>
-        </header>
-        <main>
-            <aside>
-                <h2>О HTML</h2>
-                <p>HTML (язык гипертекстовой разметки) — это стандартный язык для создания веб-страниц. Он задаёт структуру контента и работает вместе с CSS для оформления.</p>
-                <ul>
-                    <li>Элементы задаются с помощью тегов.</li>
-                    <li>HTML легко изучить и широко использовать.</li>
-                    <li>Основные теги: <code>&lt;div&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code>.</li>
-                </ul>
-            </aside>
-            <section>
-                <h2>Создайте аккаунт</h2>
-                <form>
-                    <label for="username">Имя пользователя:</label>
-                    <input type="text" id="username" name="username" placeholder="Введите имя пользователя" required>
+  <div class="container">
+    <h1>Регистрация</h1>
+    <form action="ThankYou.html" method="GET">
+      <label for="username">Имя пользователя</label>
+      <input type="text" id="username" name="username" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Введите email" required>
+      <label for="email">Электронная почта</label>
+      <input type="email" id="email" name="email" required>
 
-                    <label for="password">Пароль:</label>
-                    <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" required>
 
-                    <button type="submit">Зарегистрироваться</button>
-                </form>
-                <p>Уже есть аккаунт? <a href="#">Войти</a>.</p>
-            </section>
-            <aside>
-                <h2>О CSS</h2>
-                <p>CSS (каскадные таблицы стилей) используется для оформления структуры, заданной HTML. С помощью CSS можно управлять макетом, цветами, шрифтами и адаптивностью сайта.</p>
-                <ul>
-                    <li>CSS делает сайты визуально привлекательными.</li>
-                    <li>Основные функции: селекторы, свойства и медиазапросы.</li>
-                    <li>Flexbox и Grid упрощают создание макетов.</li>
-                </ul>
-            </aside>
-        </main>
-        <footer>
-            <p>&copy; 2024 Платформа веб-разработки. Все права защищены.</p>
-        </footer>
-    </div>
+      <label for="confirm-password">Подтвердите пароль</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <label for="dob">Дата рождения</label>
+      <input type="date" id="dob" name="dob" max="2023-12-31" required>
+
+      <label>Пол</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="male" required> Мужской</label>
+        <label><input type="radio" name="gender" value="female" required> Женский</label>
+      </div>
+
+      <label for="subscribe">
+        <input type="checkbox" id="subscribe" name="subscribe"> Подписаться на новости
+      </label>
+
+      <label for="message">Сообщение для администратора</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="btn">Зарегистрироваться</button>
+    </form>
+  </div>
 </body>
 </html>
